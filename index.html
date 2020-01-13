@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sedona</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/1029478.png" sizes="32x32">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<img class="page-header__logo" src="img/logotype-desktop.svg" alt="Логотип Sedona">
+			<nav class="page-header__nav site-navigation">
+				<ul class="site-navigation__list">
+					<div class="site-navigation__wrapper">				
+						<li class="site-navigation__item">
+							<a class="site-navigation__link" href="#">Главная</a>
+						</li>
+						<li class="site-navigation__item">
+							<a class="site-navigation__link" href="#">Фото и видео</a>
+						</li>
+					</div>
+					<div class="site-navigation__wrapper">
+						<li class="site-navigation__item">
+							<a class="site-navigation__link" href="#">Форма отзыва</a>
+						</li>
+						<li class="site-navigation__item">
+							<!-- Стоит заглушка на ссылке -->
+							<a class="site-navigation__link" href="#">Html academy</a> 
+						</div>
+					</li>
+				</ul>
+			</nav>	
+		</div>		
+	</header>
+
+	<main class="page-main">
+		<div class="container">
+			<h1 class="visually-hidden">Седона — небольшой городок в Аризоне.</h1>
+			<section class="sedona-intro">
+				<img class="sedona-intro__text" src="img/sedona-intro-text.svg" alt='Надпись "Добро пожаловать в Cедону"' width="460px" height="350px">
+			</section>
+			<section class="sedona-causes">
+				<h2 class="sedona-causes__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p class="sedona-causes__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				<ul class="sedona-causes__list">
+					<li class="sedona-causes__item causes-card causes-card--main">
+						<h3 class="causes-card__title">Настоящий <br>городок</h3>
+						<span class="causes-card__number">— №1 —</span>
+						<p class="causes-card__text">Седона не атракцион для туристов, там течёт своя жизнь</p>
+					</li>
+
+					<picture>
+						<source srcset="img/photo-city-mobile.jpg" media="(max-width: 768px)">
+						<source srcset="img/photo-city-tablet.jpg" media="(min-width: 768px) and (max-width: 1280px)">
+						<img class="sedona-causes__image" src="img/photo-city.jpg" alt="Фото города Sedona">
+					</picture>	
+
+					<li class="sedona-causes__item causes-card causes-card--icon">
+						<h3 class="causes-card__title">Жилье</h3>
+						<p class="causes-card__text">Седона не атракцион для туристов, там течёт своя жизнь</p>
+					</li>
+
+					<li class="sedona-causes__item causes-card causes-card--icon">
+						<h3 class="causes-card__title">Еда</h3>
+						<p class="causes-card__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</li>
+
+					<li class="sedona-causes__item causes-card causes-card--icon">
+						<h3 class="causes-card__title">Сувениры</h3>
+						<p class="causes-card__text">Не только китайского,<br>но и местного производства!</p>
+					</li>
+					
+					<picture>
+						<source srcset="img/photo-bridge-mobile.jpg" media="(max-width: 768px)">
+						<source srcset="img/photo-bridge-tablet.jpg" media="(min-width: 768px) and (max-width: 1280px)">
+						<img class="sedona-causes__image" src="img/photo-bridge.jpg" alt="Фото моста дьявола">
+					</picture>
+
+					<li class="sedona-causes__item causes-card causes-card--main">
+						<h3 class="causes-card__title">Там есть <br>мост дьявола</h3>
+						<span class="causes-card__number">— №2 —</span>
+						<p class="causes-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+					</li>
+
+					<li class="sedona-causes__item causes-card">
+						<h3 class="causes-card__title">Небольшая<br>площадь</h3>
+						<span class="causes-card__number">— №3 —</span>
+						<p class="causes-card__text">Все интересные места находятся очень близко</p>
+					</li>
+
+					<li class="sedona-causes__item causes-card">
+						<h3 class="causes-card__title">Красивая <br>дорога</h3>
+						<span class="causes-card__number">— №4 —</span>
+						<p class="causes-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</li>
+
+					<li class="sedona-causes__item causes-card">
+						<h3 class="causes-card__title">Мало <br>туристов</h3>
+						<span class="causes-card__number">— №5 —</span>
+						<p class="causes-card__text">Большинство едет в гранд каньон и толпится там</p>
+					</li>	
+				</ul>
+			</section>
+
+			<section class="sedona-intrested">
+				<h2 class="sedona-intrested__title">Заинтересовались?</h2>
+				<p class="sedona-intrested__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<a class="sedona-intrested__button" href="">Найти гостиницу</a>
+				<div class="sedona-intrested__map"></div>
+			</section>	
+		</div>
+		
+	</main>
+
+	<footer class="page-footer">
+		<div class="container">
+			<p class="page-footer__slogan">#visitSEDONA</p>
+			<ul class="page-footer__list social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href=""><span class="visually-hidden">Twitter</span></a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href=""><span class="visually-hidden">Facebook</span></a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href=""><span class="visually-hidden">Youtube</span></a>
+				</li>
+			</ul>	
+		</div>
+	</footer>
+</body>
+</html>

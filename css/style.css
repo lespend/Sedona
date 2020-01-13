@@ -1,0 +1,562 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/*Сброс стандартных стилей*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+picture {
+	font-size: 0;
+}
+
+
+
+/*Класс, который прячет объекты*/
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+}
+
+
+
+/*Общие стили*/
+body {
+	font-family: PTSans, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+
+/*Шапка сайта*/
+.page-header__logo {
+	display: none;
+}
+
+.site-navigation {
+	position: relative;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.site-navigation__link {
+	color: #000000;
+}
+
+.site-navigation__link:hover {
+	color: #81b3d2;
+}
+
+.site-navigation__link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation__link--active {
+	color: #766357;
+}
+
+.site-navigation__link--active:hover {
+	color: #604e43;
+}
+
+.site-navigation__link--active:active {
+	color: rgba(118, 99, 87, 0.3);
+}
+
+.site-navigation__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation__wrapper {
+	width: 505px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.page-header__logo {
+	position: absolute;
+	z-index: 1;
+	left: calc(50% - 94px);
+	display: block;
+	width: 188px;
+	height: 96px;
+}
+
+
+
+/*Основное содержимое главной страницы*/
+
+/*Блок интро Sedona*/
+.sedona-intro {
+	position: relative;
+	width: 100%;
+	height: 518px;
+	background: url(../img/background-main-intro.jpg) no-repeat center;
+}
+
+.sedona-intro::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 600px);
+	width: 1200px;
+	height: 57px;
+	background: url(../img/triangle-pattern.svg) no-repeat center;
+	background-size: 1200px;
+}
+
+.sedona-intro__text {
+	margin-top: 78px;
+	margin-left: calc(50% - 230px);
+}
+
+
+
+/*Блок Sedona причины посещения*/
+.sedona-causes {
+	margin-top: 50px;
+}
+
+.sedona-causes__title {
+	max-width: 450px;
+	margin: 0 auto;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.sedona-causes__intro {
+	margin-top: 32px;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+	color: #333333;
+}
+
+.causes-card {
+	box-sizing: border-box;
+	width: 400px;
+	height: 256px;
+	padding-top: 57px;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+.causes-card__title {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.causes-card__number {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.causes-card__text {
+	max-width: 256px;
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.causes-card--main {
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+
+.causes-card--main .causes-card__number {
+	color: #ffffff;
+}
+
+.causes-card--main .causes-card__text {
+	color: #ffffff;
+}
+
+.sedona-causes__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 52px;
+}
+
+.causes-card--icon {
+	position: relative;
+	min-height: 330px;
+	padding-top: 160px;
+	background-color: #ffffff;
+}
+
+.sedona-causes__item:nth-child(3)::before {
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 37px);
+	width: 75px;
+	height: 72px;
+	background: url(../img/icon-home.svg) no-repeat;
+}
+
+.sedona-causes__item:nth-child(4)::before {
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 34px);
+	width: 77px;
+	height: 68px;
+	background: url(../img/icon-burger.svg) no-repeat;
+}
+
+.sedona-causes__item:nth-child(5)::before {
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 32px);
+	width: 64px;
+	height: 75px;
+	background: url(../img/icon-gift.svg) no-repeat;
+}
+
+
+/*Блок Заинтересовались?*/
+.sedona-intrested__title {
+	margin-top: 55px;
+	font-size: 30px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.sedona-intrested__text {
+	margin-top: 33px;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #333333;
+}
+
+.sedona-intrested__button {
+	box-sizing: border-box;
+	display: block;
+	max-width: 458px;
+	height: 58px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 15px 0;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.sedona-intrested__button:hover {
+	background-color: #669ec0;
+}
+
+.sedona-intrested__button:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.sedona-intrested__map {
+	height: 350px;
+	margin-top: 66px;
+	background: url(../img/map-desktop.jpg) no-repeat center;
+}
+
+/*Подвал сайта*/
+.page-footer {
+	position: relative;
+	height: 120px;
+	box-sizing: border-box;
+	padding-top: 36px;
+}
+
+.page-footer__list {
+	margin: 0 auto;
+}
+
+.social-list {
+	max-width: 150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-list__link {
+	position: relative;
+	display: block;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+}
+
+.social-list__link::after {
+	content: "";
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+.social-list__link:hover {
+	background-color: #669ec0;
+}
+
+.social-list__link:active {
+	background-color: #5496bd;
+}
+
+.social-list__link:active::after {
+	opacity: 0.3;
+}
+
+.social-list__item:first-child a::after {
+	width: 18px;
+	height: 14px;
+	top: 17px;
+	left: calc(50% - 9px);
+	background-image: url(../img/icon-twitter.svg);
+}
+
+.social-list__item:nth-child(2) a::after {
+	width: 9px;
+	height: 18px;
+	top: 14px;
+	left: calc(50% - 4.5px);
+	background-image: url(../img/icon-facebook.svg);
+}
+
+.social-list__item:last-child a::after {
+	width: 20px;
+	height: 14px;
+	top: 17px;
+	left: calc(50% - 10px);
+	background-image: url(../img/icon-youtube.svg);
+}
+
+.page-footer__slogan {
+	position: absolute;
+	top: 14px;
+	left: 160px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/*Адаптивная верстка*/
+@media(max-width: 1280px) and (min-width: 768px) {
+	.container {
+		width: 768px;
+		padding: 0;
+	}
+
+	.sedona-intro::after {
+		left: calc(50% - 384px);
+		width: 768px;
+		background-size: 1200px;
+	}
+	
+	.site-navigation__wrapper {
+		max-width: 330px;
+	}
+
+	.causes-card {
+		width: 256px;
+	}
+
+	.causes-card__text {
+		max-width: 170px;
+	}
+
+	.sedona-intrested__map {
+		background: url(../img/map-tablet.jpg) no-repeat center;
+	}
+
+	.page-footer__slogan {
+		left: 0;
+	}
+}
+
+
+
+
+
+
+@media(max-width: 768px) {
+	.container {
+		max-width: 320px;
+		padding: 0;
+	}
+
+	.site-navigation {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.site-navigation__link {
+		display: block;
+		width: 100%;
+		padding: 20px 0;
+		color: #ffffff;
+		background-color: #81b3d2;
+		border-top: 1px solid #9ac2db;
+		border-bottom: 1px solid #678fa8;
+	}
+
+	.site-navigation__list {
+		flex-direction: column;
+	}
+
+	.site-navigation__wrapper {
+		display: block;
+		width: 100%;
+	}
+
+	.sedona-intro__text {
+		width: 282px;
+		height: 214px;
+		margin-top: 90px;
+		margin-left: calc(50% - 141px);
+	}
+
+	.sedona-intro {
+		height: 389px;
+		background-image: url(../img/background-main-intro-mobile.jpg);
+	}
+
+	.sedona-intro::after {
+		left: calc(50% - 160px);
+		width: 320px;
+	}
+
+	.sedona-causes__title {
+		max-width: 315px;
+	}
+
+	.sedona-causes__intro {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 275px;
+	}
+
+	.sedona-causes br {
+		display: none;
+	}
+	
+	.causes-card--icon {
+		padding-top: 7px;
+		padding-left: 50px;
+		text-align: left;
+	}
+
+	.causes-card--icon .causes-card__title {
+		font-size: 18px;
+	}
+
+	.causes-card--icon .causes-card__text {
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.causes-card--icon {
+		min-height: 115px;
+		height: 115px;
+	}
+
+	.sedona-causes__list .sedona-causes__item::before {
+		top: 0;
+		left: 0;
+	}
+
+	.sedona-causes__item:nth-child(3) {
+		margin-top: 25px;
+	}
+
+	.sedona-causes__item:nth-child(3)::before {
+		width: 39px;
+		height: 37px;
+	}
+
+	.sedona-causes__item:nth-child(4)::before {
+		width: 40px;
+		height: 35px;
+	}
+
+	.sedona-causes__item:nth-child(5)::before {
+		width: 32px;
+		height: 38px;
+	}
+
+	.page-footer {
+		height: 180px;
+		padding-top: 98px;
+	}
+
+	.page-footer__slogan {
+		top: -67px;
+		left: calc(50% - 68px);
+		text-align: center;
+	}
+
+	.page-header__logo {
+		top: 270px;
+		min-height: 86px;
+	}
+}
