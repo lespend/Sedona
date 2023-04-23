@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lespend/Sedona/64854fea356eef437e41dfd8d0f6f1c08d239fd2/img/logotype-desktop.svg" alt="Логотип сайта" height="100">
+  <img src="https://raw.githubusercontent.com/lespend/Sedona/64854fea356eef437e41dfd8d0f6f1c08d239fd2/img/logotype-desktop.svg" alt="Логотип сайта" height="300">
 </p>
 
 ![Shield](https://img.shields.io/badge/landing-page-grayf?style=for-the-badge&logo=geart&logoColor=white)
